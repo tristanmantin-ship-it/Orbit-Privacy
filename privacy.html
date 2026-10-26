@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orbit – Politique de confidentialité</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>Orbit – Politique de confidentialité</h1>
+<p>Dernière mise à jour : 26 octobre 2026</p>
+
+<h2>1. Qui sommes-nous ?</h2>
+<p>Orbit (fr.akkroma.orbit) est une application de contrôle parental éditée par Tristan Mantin, micro-entreprise Akkroma, [ADRESSE POSTALE À COMPLÉTER], France. Responsable du traitement et contact : <a href="mailto:tristan.mantin@outlook.fr">tristan.mantin@outlook.fr</a>.</p>
+
+<h2>2. À quoi sert l’application ?</h2>
+<p>Orbit permet à un parent de rassurer et d’accompagner son enfant : voir si l’enfant est arrivé à l’école ou à la maison, définir des horaires et des règles d’usage, recevoir une alerte SOS et échanger des messages. L’application s’installe sur le téléphone du parent (mode parent) et sur celui de l’enfant (mode enfant). Elle est destinée aux adultes titulaires de l’autorité parentale ; les enfants ne créent pas de compte.</p>
+<p>Orbit est un outil de surveillance <strong>déclaré et visible</strong> : l’enfant est informé par l’application, qui affiche en permanence une notification lorsqu’elle fonctionne sur son appareil.</p>
+
+<h2>3. Données traitées</h2>
+<table>
+<tr><th>Donnée</th><th>Qui / pourquoi</th><th>Où elle est stockée</th></tr>
+<tr><td>Compte parent : adresse e-mail, identifiant Firebase, nom affiché</td><td>Parent. Authentification et rattachement à la famille.</td><td>Firebase Authentication (Google) ; identifiant et e-mail du titulaire dans la base Orbit (Cloudflare D1).</td></tr>
+<tr><td>Prénom de l’enfant, icône d’avatar, nom de famille éventuel</td><td>Enfant. Affichage dans l’application du parent.</td><td>Base Orbit.</td></tr>
+<tr><td>Photo choisie pour un enfant ou un parent</td><td>Personnalisation.</td><td><strong>Uniquement sur l’appareil</strong> où elle a été choisie ; elle n’est pas envoyée à nos serveurs.</td></tr>
+<tr><td>Position approximative ou précise de l’appareil de l’enfant</td><td>Enfant. Savoir où il se trouve, détecter l’arrivée ou le départ d’un lieu (maison, école…), bouton « localiser ».</td><td>Dernière position connue dans la base Orbit. Les zones (lieux) définies par le parent sont conservées sur l’appareil du parent et transmises à l’appareil de l’enfant.</td></tr>
+<tr><td>Nom du réseau Wi-Fi auquel l’enfant est connecté</td><td>Enfant. Reconnaître un lieu (maison, école) sans GPS.</td><td>Base Orbit (nom du réseau et libellé donné par le parent).</td></tr>
+<tr><td>Liste des applications installées et applications ouvertes</td><td>Enfant. Bloquer ou mettre en pause une application choisie par le parent.</td><td>Base Orbit (liste), traitement local pour le blocage.</td></tr>
+<tr><td>Temps d’écran, nombre de déverrouillages, applications les plus utilisées</td><td>Enfant. Statistiques d’usage pour le parent.</td><td>Base Orbit (valeurs du jour).</td></tr>
+<tr><td>Messages et alertes (SOS, demandes, messages entre parent et enfant), commandes (sonnerie, pause…)</td><td>Parent et enfant. Communication et alertes.</td><td>Base Orbit, <strong>supprimés automatiquement après 48 heures</strong>.</td></tr>
+<tr><td>Code parental (4 chiffres)</td><td>Parent. Protéger les réglages.</td><td>Stocké de façon irréversible (empreinte chiffrée) sur le serveur ; jamais en clair.</td></tr>
+<tr><td>Contacts d’urgence choisis par le parent</td><td>Parent. Appel rapide depuis le SOS.</td><td>Sur l’appareil uniquement.</td></tr>
+<tr><td>Mots repérés dans la saisie (option facultative, désactivée par défaut)</td><td>Enfant. Alerter le parent quand certains mots sensibles sont tapés.</td><td>Traitement local : seuls le mot repéré et l’application concernée sont conservés ; le texte saisi et les mots de passe ne sont jamais enregistrés ni envoyés.</td></tr>
+<tr><td>Données techniques : adresse IP, journaux de requêtes</td><td>Sécurité et bon fonctionnement du service.</td><td>Cloudflare (hébergement de l’API).</td></tr>
+</table>
+<p>Orbit n’utilise ni publicité, ni outil de mesure d’audience tiers, et ne vend aucune donnée.</p>
+
+<h2>4. Fondements et finalités</h2>
+<p>Les données sont traitées pour fournir le service demandé par le parent (exécution du contrat) et, pour l’enfant, dans le cadre de l’autorité parentale du titulaire du compte. Elles ne servent à aucune autre finalité, ni à du profilage commercial.</p>
+
+<h2>5. Prestataires et destinataires</h2>
+<ul>
+<li><strong>Google (Firebase Authentication, connexion Google)</strong> : authentification.</li>
+<li><strong>Cloudflare (Workers et base D1)</strong> : hébergement de l’API et de la base de données.</li>
+<li><strong>OpenStreetMap</strong> : les fonds de carte sont chargés depuis ses serveurs ; votre adresse IP est visible de ce service lors de l’affichage d’une carte.</li>
+</ul>
+<p>Les données ne sont accessibles qu’aux parents de la famille concernée. Certains prestataires peuvent traiter des données hors de l’Union européenne, avec les garanties prévues par le RGPD (clauses contractuelles types).</p>
+
+<h2>6. Durée de conservation</h2>
+<ul>
+<li>Messages et commandes : 48 heures.</li>
+<li>Autres données : tant que le compte et l’enfant concerné existent.</li>
+<li>Suppression d’un enfant : ses données (position, applications, statistiques, Wi-Fi, profil, messages) sont effacées du serveur et son appareil est libéré.</li>
+<li>Suppression du compte : la famille, les enfants et toutes les données associées sont effacés du serveur, puis le compte d’authentification est supprimé.</li>
+</ul>
+
+<h2>7. Vos droits</h2>
+<p>Vous pouvez à tout moment accéder à vos données, les corriger et les supprimer. La suppression se fait directement dans l’application (Réglages → Supprimer mon compte) ou en suivant <a href="delete-account.html">cette page</a>. Pour toute demande (accès, rectification, opposition, portabilité), écrivez à <a href="mailto:tristan.mantin@outlook.fr">tristan.mantin@outlook.fr</a>. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+<h2>8. Autorisations Android demandées</h2>
+<ul>
+<li><strong>Localisation</strong> : situer l’appareil de l’enfant.</li>
+<li><strong>Accessibilité</strong> : détecter l’application ouverte pour appliquer un blocage ou un horaire décidé par le parent, et, si le parent l’active, repérer des mots sensibles.</li>
+<li><strong>Accès aux statistiques d’utilisation et liste des applications</strong> : temps d’écran et blocage d’applications.</li>
+<li><strong>Administrateur de l’appareil</strong> : empêcher la désinstallation d’Orbit sans le code parental.</li>
+<li><strong>Filtrage des appels et contacts</strong> : fonctions de protection choisies par le parent.</li>
+<li><strong>Notifications, services au premier plan, démarrage, plein écran</strong> : alertes, SOS et fonctionnement continu.</li>
+</ul>
+<p>Chaque autorisation est demandée de façon explicite, et vous pouvez la retirer dans les réglages d’Android.</p>
+
+<h2>9. Sécurité</h2>
+<p>Les échanges sont chiffrés (HTTPS). Chaque requête est authentifiée et limitée à la famille concernée. Le code parental n’est jamais conservé en clair.</p>
+
+<h2>10. Modifications</h2>
+<p>Cette politique peut évoluer ; la date de mise à jour figure en haut de page. Toute modification importante sera signalée dans l’application.</p>
+</body></html>
