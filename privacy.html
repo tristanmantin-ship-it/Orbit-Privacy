@@ -25,6 +25,7 @@
 <tr><td>Code parental (4 chiffres)</td><td>Parent. Protéger les réglages.</td><td>Stocké de façon irréversible (empreinte chiffrée) sur le serveur ; jamais en clair.</td></tr>
 <tr><td>Contacts d’urgence choisis par le parent</td><td>Parent. Appel rapide depuis le SOS.</td><td>Sur l’appareil uniquement.</td></tr>
 <tr><td>Mots repérés dans la saisie (option facultative, désactivée par défaut)</td><td>Enfant. Alerter le parent quand certains mots sensibles sont tapés.</td><td>Traitement local : seuls le mot repéré et l’application concernée sont conservés ; le texte saisi et les mots de passe ne sont jamais enregistrés ni envoyés.</td></tr>
+<tr><td>Réglages de garde-fous de l’appareil de l’enfant (pré-blocage, protections, liste de mots surveillés choisie par le parent, numéros autorisés à appeler)</td><td>Parent et enfant. Appliquer les réglages choisis par le parent et lui permettre de vérifier qu’ils sont actifs.</td><td>Base Orbit, tant que l’enfant existe ; effacés avec lui.</td></tr>
 <tr><td>Données techniques : adresse IP, journaux de requêtes</td><td>Sécurité et bon fonctionnement du service.</td><td>Cloudflare (hébergement de l’API).</td></tr>
 </table>
 <p>Orbit n’utilise ni publicité, ni outil de mesure d’audience tiers, et ne vend aucune donnée.</p>
@@ -44,6 +45,7 @@
 <ul>
 <li>Messages et commandes : 48 heures.</li>
 <li>Autres données : tant que le compte et l’enfant concerné existent.</li>
+<li>Réinitialisation d’Orbit sur l’appareil de l’enfant : l’appareil est dissocié de la famille, l’enfant disparaît chez le parent et ses données sont effacées du serveur.</li>
 <li>Suppression d’un enfant : ses données (position, applications, statistiques, Wi-Fi, profil, messages) sont effacées du serveur et son appareil est libéré.</li>
 <li>Suppression du compte : la famille, les enfants et toutes les données associées sont effacés du serveur, puis le compte d’authentification est supprimé.</li>
 </ul>
